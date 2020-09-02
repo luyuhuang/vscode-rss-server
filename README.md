@@ -1,6 +1,6 @@
 # vscode-rss-server
 
-Just for Inoreader OAuth. The main project See [https://github.com/luyuhuang/vscode-rss](https://github.com/luyuhuang/vscode-rss).
+Just for Inoreader OAuth. The main project see [https://github.com/luyuhuang/vscode-rss](https://github.com/luyuhuang/vscode-rss).
 
 ## Build & Usage
 
