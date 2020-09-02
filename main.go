@@ -32,7 +32,7 @@ func getcode(w http.ResponseWriter, req *http.Request) {
 
 	state := req.URL.Query().Get("state")
 	if len(state) == 0 {
-		fmt.Fprintf(w, "{status:0}")
+		fmt.Fprintf(w, "{\"status\":-1}")
 		return
 	}
 
@@ -44,10 +44,10 @@ func getcode(w http.ResponseWriter, req *http.Request) {
 	mutex.Unlock()
 
 	if !ok {
-		fmt.Fprintf(w, "{status:1}")
+		fmt.Fprintf(w, "{\"status\":1}")
 	} else {
 		log.Println("get", state, code)
-		fmt.Fprintf(w, "{status:0,code:\"%s\"}", code)
+		fmt.Fprintf(w, "{\"status\":0,\"code\":\"%s\"}", code)
 	}
 }
 
