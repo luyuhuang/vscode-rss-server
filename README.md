@@ -1,3 +1,5 @@
+*Obsolete. vscode-rss can open a local http service for OAuth.*
+
 # vscode-rss-server
 
 Just for Inoreader OAuth. The main project see [https://github.com/luyuhuang/vscode-rss](https://github.com/luyuhuang/vscode-rss).
